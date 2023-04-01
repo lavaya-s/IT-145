@@ -1,0 +1,44 @@
+import java.util.Scanner; 
+
+public class DrawHalfArrow {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int arrowBaseHeight;
+      int arrowBaseWidth;
+      int arrowHeadWidth;
+      
+      System.out.println("Enter arrow base height:");
+      arrowBaseHeight = scnr.nextInt();
+      
+      System.out.println("Enter arrow base width:");
+      arrowBaseWidth = scnr.nextInt();
+      
+      System.out.println("Enter arrow head width:");
+      arrowHeadWidth = scnr.nextInt();
+      while (arrowHeadWidth <= arrowBaseWidth) {//loop until user enters a number greater than the base
+    // Prompt user for a valid arrow head value
+         System.out.println("Enter arrow head width:");
+         arrowHeadWidth = scnr.nextInt();//take input from user
+}
+      System.out.println("");
+      
+      while (arrowBaseHeight>0){//decrement value until all iterations are done
+         int arrowCount = arrowBaseWidth;//initialize count for inner loop
+         arrowBaseHeight--;//decremement the loop variable
+         while (arrowCount>0){//loop until enough asteriks are printed
+            arrowCount--;//decrement count
+            System.out.print("*");//print the asteriks
+         }
+         System.out.println();//print newline after inner loop prints the astiriks
+      }
+      while (arrowHeadWidth>0){//use user input to initalize the loop variable
+         int arrowCount = arrowHeadWidth;//init count equal to head width
+         arrowHeadWidth--;//decremement the loop variable
+         while (arrowCount>0){//inner loop using previous count
+            arrowCount--;//decremement the count
+            System.out.print("*");//print asterik until the count reaches zero
+         }
+         System.out.println();//print newline once the inner loop is finished
+      }
+   }
+}

@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.util.ArrayList;//import ArrayList
+public class PeopleWeights {
+   public static void main(String[] args) {
+      /* A class to calculate weights */
+      Scanner scnr = new Scanner(System.in);//init scanner object
+      ArrayList<Double> fiveWeights= new ArrayList<Double>(5);//init new arraylist to hold the five weights
+      for (int i=1;i<=5;i++){//iterate over arraylist to get user input five times 
+         System.out.println("Enter weight "+i+": ");
+         double myVal = scnr.nextDouble();
+         fiveWeights.add(myVal);//add input to arraylist
+      }
+      double f1=fiveWeights.get(0);//init individual elements of list
+      double f2=fiveWeights.get(1);
+      double f3=fiveWeights.get(2);
+      double f4=fiveWeights.get(3);
+      double f5=fiveWeights.get(4);
+      System.out.println();
+      System.out.println("You entered: "+ f1+" "+f2+" "+f3+" "+f4+" "+f5+" ");//display the list to the user
+      double sum=0;
+      for (int i=0;i<=4;++i){//iterate over arraylist to get sum of all elements
+         sum = sum+fiveWeights.get(i);//add to sum
+      }
+      double avg = sum/5;//divide to get average
+      double max = avg;//this will always be less than the max element
+      for (int i=0;i<=4;i++){//iterate through arraylist
+         if (fiveWeights.get(i)>max){//condition to check if current element is greater than others
+            max=fiveWeights.get(i);
+         }
+      }
+      System.out.println("Total weight: "+sum);//print statements to display to ther user
+      System.out.println("Average weight: "+avg);
+      System.out.println("Max weight: "+max);
+      return;
+   }
+}

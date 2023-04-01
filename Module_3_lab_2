@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class LabProgram {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String userText;
+      // Add more variables as needed
+   
+      userText = scnr.nextLine();  // Gets entire line, including spaces. 
+      int count = 0;
+      /* Type your code here. */
+      String x = ",";//initial comparison variables
+      String y = ".";
+      String z = " ";
+      int length = userText.length();//init the length of the string for looping
+      for (int i=0;i<length;i++){//loop over the length of the string
+         if (Character.isLetter(userText.charAt(i)))//compare the character to ensure it is a latter
+            count++;//increment the count
+         else if (userText.charAt(i)=='?')//check to see if question mark
+            count++;
+      }
+      System.out.println(count);//use the count to print out the number of characters
+   }
+}
