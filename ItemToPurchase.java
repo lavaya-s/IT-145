@@ -1,42 +1,52 @@
 import java.util.Scanner;
-public class ItemToPurchase {
+
+public class ItemToPurchase extends ShoppingCartPrinter{
    //Private fields - itemName, itemPrice, and itemQuanity
 
-   Scanner scnr = new Scanner(System.in);
-   public ItemToPurchase(String itemName,double itemPrice,int itemQuantity){
-      super();
-         itemName = "none";
-         itemPrice = 0;
-         itemQuantity = 0;
-      setName(itemName);
-      setPrice(itemPrice);
-      setQuantity(itemQuantity);
+   
+   private static void ItemToPurchase(){
+      String itemName = "none";
+      int itemPrice = 0;
+      int itemQuantity = 0;
    }
    //public member methods (mutators & accessors)
-   public void setName(String itemName){
+   public void setName(String productName){
+      Scanner scnr = new Scanner(System.in);
       System.out.println("Enter the item name:");
-      itemName = itemName;
+      String itemName=productName;
+      
+      scnr.close();
+      
       
    }
-   public String getName(){
-      return this.itemName;
+   public String getName(String itemName){
+      
+      return itemName;
    }
-   public void setPrice(double itemPrice){
+   public void setPrice(int productPrice){
       System.out.println("Enter the item price:");
-      itemPrice = itemPrice;
+      Scanner scnr = new Scanner(System.in);
+      int itemPrice=productPrice;
+      
+      scnr.close();
    }
-   public double getPrice(){
-      return this.itemPrice;
+   public int getPrice(int itemPrice){
+      
+      return itemPrice;
    }
-   public void setQuantity(int itemQuantity){
+   public void setQuantity(int productQuantity){
       System.out.println("Enter the item quantity:");
-      itemQuantity = itemQuantity;
+      Scanner scnr = new Scanner(System.in);
+      int itemQuantity=productQuantity;
+      
+      scnr.close();
    }
-   public int getQuantity(){
-      return this.itemQuantity;
+   public int getQuantity(int itemQuantity){
+      
+      return itemQuantity;
    }
    //print item to purchase
-   public void printItemPurchase(String itemName,double itemPrice,int itemQuantity){//int itemQuantity,String itemName,double itemPrice) {
+   public void printItemPurchase(String itemName,int itemPrice,int itemQuantity){//int itemQuantity,String itemName,double itemPrice) {
       System.out.println(itemQuantity + " " + itemName + " $" + itemPrice +  
                          " = $" + (itemPrice * itemQuantity));
    }
