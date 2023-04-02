@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;//import ArrayList
-public class PeopleWeights {
+public class Module_4_lab {
    public static void main(String[] args) {
       /* A class to calculate weights */
       Scanner scnr = new Scanner(System.in);//init scanner object
