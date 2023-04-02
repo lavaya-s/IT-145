@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.function.Function;
 public class Pet {
     Scanner scnr = new Scanner(System.in);
-    Pet() {
+    Pet(){
         getPetType();
         getPetName();
         getPetAge();
@@ -13,8 +13,7 @@ public class Pet {
         setPetAge();
         setCatSpaces();
         setDogSpaces();
-    }
-    public void Main(String[]args) {
+        }public void Main(String[]args){
         String petType = "";
         String petName = "";
         int petAge = 0;
@@ -24,36 +23,24 @@ public class Pet {
         double amountDue = 0;
         public String getPetType() {
             return this.petType;
-        }
-        public String getPetName() {
+        }public String getPetName() {
             return this.petName;
-        }
-        public int getPetAge() {
+        }public int getPetAge() {
             return this.petAge;
-        }
-        public int getCatSpaces() {
+        }public int getCatSpaces() {
             return this.catSpaces;
-        }
-        public int getDogSpaces() {
+        }public int getDogSpaces() {
             return this.dogSpaces;
-        }
-        public int getDaysStay() {
+        }public int getDaysStay() {
             return this.daysStay;
-        }
-        public double getAmountDue() {
+        }public double getAmountDue() {
             return this.amountDue;
-    }
-        private void setCatSpaces() {
+        }private void setCatSpaces() {
             catSpaces = scnr.nextInt();
-}
-        private void setDogSpaces() {
+        }private void setDogSpaces() {
             dogSpaces = scnr.nextInt();
-    }
-        private void setDaysStay() {
+        }private void setDaysStay() {
             daysStay = scnr.nextInt();
-    }
-        private void setAmountDue() {
+        }private void setAmountDue() {
             amountDue = scnr.nextDouble();
-    }
-}
-}
+        }}}
