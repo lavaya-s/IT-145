@@ -4,28 +4,6 @@ import java.util.Scanner;
 public class Driver {
     private static ArrayList<Dog> dogList = new ArrayList<Dog>();
     private static ArrayList<Monkey> monkeyList = new ArrayList<Monkey>();
-    // Instance variables (if needed)
-/*In the Driver.java class, modify the main method. In main(), you must create a menu loop that does the following:
-Displays the menu by calling the displayMenu method. This method is in the Driver.java class.
-Prompts the user for input
-Takes the appropriate action based on the value that the user entered
-
-IMPORTANT: You do not need to complete all of the methods included in the menu for this milestone. 
-Simple placeholder print statements for these methods have been included in the starter code so that you can test your menu functionality.
-Next, you will need to create a monkey ArrayList in the Driver.java class.
-Refer to the dog ArrayList, which is included right before main(), as an example. 
- Creating this ArrayList is necessary for the intakeNewMonkey() method, which you will implement in the next step. 
- Though it is not required, it may be helpful to pre-populate your ArrayList with a few test monkey objects in the initializeMonkeyList() method.
-Finally, you will implement the intakeNewMonkey() method in the Driver.java class. 
-Your completed method should do the following:
-Prompt the user for input.
-Set data for all attributes based on user input.
-Add the newly instantiated monkey to an ArrayList.
-
-Tips: Remember to refer to the accessors and mutators in your Monkey and RescueAnimal classes as you create this method. 
-Additionally, you should use the nextLine method of the scanner to receive the user’s input. 
-Refer back to Section 1.15 in zyBooks for a refresher on how to use this method. */
-
 
     public static void main(String[] args) {
 
@@ -67,13 +45,6 @@ Refer back to Section 1.15 in zyBooks for a refresher on how to use this method.
             // TODO: handle exception
             }
         }while (loop == true);
-        
-	// For the project submission you must also include input validation
-        // and appropriate feedback to the user.
-        // Hint: create a Scanner and pass it to the necessary
-        // methods 
-	// Hint: Menu options 4, 5, and 6 should all connect to the printAnimals() method.
-
     }
 
     // This method prints the menu options
@@ -156,19 +127,6 @@ Refer back to Section 1.15 in zyBooks for a refresher on how to use this method.
             System.out.println("The method reserveAnimal needs to be implemented");
 
         }
-
-        // Complete printAnimals
-        // Include the animal name, status, acquisition country and if the animal is reserved.
-	// Remember that this method connects to three different menu items.
-        // The printAnimals() method has three different outputs
-        // based on the listType parameter
-        // dog - prints the list of dogs
-        // monkey - prints the list of monkeys
-        // available - prints a combined list of all animals that are
-        // fully trained ("in service") but not reserved 
-	// Remember that you only have to fully implement ONE of these lists. 
-	// The other lists can have a print statement saying "This option needs to be implemented".
-	// To score "exemplary" you must correctly implement the "available" list.
         public static void printAnimals(String switchCase) {
             //System.out.println("The method printAnimals needs to be implemented");
             switch (switchCase){
@@ -185,4 +143,3 @@ Refer back to Section 1.15 in zyBooks for a refresher on how to use this method.
             return;
         }
 }
-
