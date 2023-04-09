@@ -19,33 +19,29 @@ public class Driver {
             Scanner scnr = new Scanner(System.in);
             displayMenu();
             String switchCase = scnr.next();//take input for the options
-            try {
-                switch (switchCase){//use the option input for switch case
-                    case "1":
-                        intakeNewDog(scnr);
-                        break;
-                    case "2":
-                        intakeNewMonkey(scnr);
-                        break;
-                    case "3":
-                        reserveAnimal(scnr);
-                        break;
-                    case "4":
-                        printAnimals(switchCase);
-                        break;
-                    case "5":
-                        printAnimals(switchCase);
-                        break;
-                    case "6":
-                        printAnimals(switchCase);
-                        break;
-                    case "q":
-                        loop = false;//stops the program
-                        break;
+            switch (switchCase){//use the option input for switch case
+                case "1":
+                    intakeNewDog(scnr);
+                    break;
+                case "2":
+                    intakeNewMonkey(scnr);
+                    break;
+                case "3":
+                    reserveAnimal(scnr);
+                    break;
+                 case "4":
+                    printAnimals(switchCase);
+                    break;
+                case "5":
+                    printAnimals(switchCase);
+                    break;
+                case "6":
+                    printAnimals(switchCase);
+                    break;
+                case "q":
+                    loop = false;//stops the program
+                    break;
                 }
-            } catch (Exception e) {
-            // TODO: handle exception
-            }
         }while (loop == true);
     }
 
