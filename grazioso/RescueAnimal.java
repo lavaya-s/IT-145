@@ -38,6 +38,7 @@ public class RescueAnimal {
 
 
 	public void setAnimalType(String animalType) {
+		System.out.println("Enter animal type: ");
 		this.animalType = animalType;
 	}
 
@@ -48,6 +49,7 @@ public class RescueAnimal {
 
 
 	public void setGender(String gender) {
+		System.out.println("Enter gender: ");
 		this.gender = gender;
 	}
 
@@ -58,6 +60,7 @@ public class RescueAnimal {
 
 
 	public void setAge(String age) {
+		System.out.println("Enter age: ");
 		this.age = age;
 	}
 
@@ -68,6 +71,7 @@ public class RescueAnimal {
 
 
 	public void setWeight(String weight) {
+		System.out.println("Enter weight: ");
 		this.weight = weight;
 	}
 
@@ -78,6 +82,7 @@ public class RescueAnimal {
 
 
 	public void setAcquisitionDate(String acquisitionDate) {
+		System.out.println("Enter aquisition date: ");
 		this.acquisitionDate = acquisitionDate;
 	}
 
@@ -88,6 +93,7 @@ public class RescueAnimal {
 
 
 	public void setAcquisitionLocation(String acquisitionCountry) {
+		System.out.println("Enter aquisition location: ");
 		this.acquisitionCountry = acquisitionCountry;
 	}
 
@@ -98,6 +104,7 @@ public class RescueAnimal {
 
 
 	public void setReserved(boolean reserved) {
+		System.out.println("Set reserved status [true/false]:");
 		this.reserved = reserved;
 	}
 
@@ -108,6 +115,7 @@ public class RescueAnimal {
 
 
 	public void setInServiceCountry(String inServiceCountry) {
+		System.out.println("Enter service country: ");
 		this.inServiceCountry = inServiceCountry;
 	}
 
@@ -120,6 +128,7 @@ public class RescueAnimal {
 
 
 	public void setTrainingStatus(String trainingStatus) {
+		System.out.println("Enter training status: ");
 		this.trainingStatus = trainingStatus;
 	}
 }
