@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.math.ceil;;
+import java.math.ceil;
 public class Paint2 {
 
     public static void main(String[] args) {
@@ -36,5 +36,6 @@ public class Paint2 {
         // Complete this code block
         cansNeeded = Math.ceil(gallonsPaintNeeded);
         System.out.print("Cans needed: "+ cansNeeded +" can(s)");
+        scnr.close();
     }
 }

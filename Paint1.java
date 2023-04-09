@@ -50,7 +50,6 @@ public class Paint1 {
 
         // Calculate and output the amount of paint (in gallons) needed to paint the wall
         gallonsPaintNeeded = wallArea/squareFeetPerGallons;
-        gallonsPaintNeeded = Math.ceil(gallonsPaintNeeded);
         System.out.println("Paint needed: " + gallonsPaintNeeded + " gallons");
         scnr.close();
     }
