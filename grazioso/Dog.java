@@ -8,6 +8,7 @@ public class Dog extends RescueAnimal {
     public Dog(String name, String breed, String gender, String age,
     String weight, String acquisitionDate, String acquisitionCountry,
 	String trainingStatus, boolean reserved, String inServiceCountry) {
+        //TODO: add print statements in between mehtods
         setName(name);
         setBreed(breed);
         setGender(gender);

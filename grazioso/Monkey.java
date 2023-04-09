@@ -10,6 +10,7 @@ public class Monkey extends RescueAnimal{//inherets from the rescue animal class
     public Monkey(double tailLength, double height,double bodyLength, String species, String name, String gender, String age,
     String weight, String acquisitionDate, String acquisitionCountry,
 	String trainingStatus, boolean reserved, String inServiceCountry){
+        //TODO: add print statements in between methods
         setTailLength(tailLength);
         setHeight(height);
         setBodyLength(bodyLength);
