@@ -2,23 +2,25 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Driver {
+    //arraylists to hold the animals data
     private static ArrayList<Dog> dogList = new ArrayList<Dog>();
     private static ArrayList<Monkey> monkeyList = new ArrayList<Monkey>();
 
     public static void main(String[] args) {
-
+        //set a loop conditions for the program to run
         boolean loop = true;
+        //initialize the lists
         initializeDogList();
         initializeMonkeyList();
 
-        // Add a loop that displays the menu, accepts the users input
+        // a loop that displays the menu, accepts the users input
         // and takes the appropriate action.
         do{
             Scanner scnr = new Scanner(System.in);
             displayMenu();
-            String switchCase = scnr.next();
+            String switchCase = scnr.next();//take input for the options
             try {
-                switch (switchCase){
+                switch (switchCase){//use the option input for switch case
                     case "1":
                         intakeNewDog(scnr);
                         break;
@@ -38,7 +40,7 @@ public class Driver {
                         printAnimals(switchCase);
                         break;
                     case "q":
-                        loop = false;
+                        loop = false;//stops the program
                         break;
                 }
             } catch (Exception e) {

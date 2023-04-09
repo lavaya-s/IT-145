@@ -1,10 +1,12 @@
 /*In a new Java file, create the Monkey class, using the specification document as a guide. The Monkey class must do the following:
 Inherit from the RescueAnimal class.*/
-public class Monkey extends RescueAnimal{
+public class Monkey extends RescueAnimal{//inherets from the rescue animal class
+    //sets private variables for monkeys
     private double tailLength;
     private double height;
     private double bodyLength;
     private String species;
+    //constructor for monkey initialization
     public Monkey(double tailLength, double height,double bodyLength, String species, String name, String gender, String age,
     String weight, String acquisitionDate, String acquisitionCountry,
 	String trainingStatus, boolean reserved, String inServiceCountry){
@@ -22,6 +24,7 @@ public class Monkey extends RescueAnimal{
         setReserved(reserved);
         setInServiceCountry(inServiceCountry);
     }
+    //Mutators for updating the monkey attributes
     public void setTailLength(double tailLength){
         this.tailLength = tailLength;
     }
@@ -34,6 +37,7 @@ public class Monkey extends RescueAnimal{
     public void setSpecies(String species){
         this.species = species;
     }
+    //Accessors for the driver class to grab information on the monkeys
     public double getTailLength(double tailLength){
         return tailLength;
     }
