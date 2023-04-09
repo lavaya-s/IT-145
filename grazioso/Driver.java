@@ -98,8 +98,13 @@ public class Driver {
         }
 
         // Add the code to instantiate a new dog and add it to the appropriate list
-        Dog dog1Dog = new Dog(name,scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.nextBoolean(),scanner.next());
-        dogList.add(dog1Dog);
+        try{
+            Dog dog1Dog = new Dog(name,scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.nextBoolean(),scanner.next());
+            dogList.add(dog1Dog);
+        }catch (Exception inputMismatchException){
+            System.out.println("Invalid input, Please try again");
+            return;
+        }
         return;
     }
 
@@ -112,14 +117,19 @@ public class Driver {
         System.out.println("The method intakeNewMonkey needs to be implemented");
         System.out.println("What is the monkey's name?");
         String name = scanner.nextLine();
-        for(Dog dog: dogList) {
-            if(dog.getName().equalsIgnoreCase(name)) {
-                System.out.println("\n\nThis dog is already in our system\n\n");
+        for(Monkey monkey: monkeyList) {
+            if(monkey.getName().equalsIgnoreCase(name)) {
+                System.out.println("\n\nThis monkey is already in our system\n\n");
                 return; //returns to menu
             }
         }
-        Monkey Monkey1 = new Monkey(scanner.nextDouble(),scanner.nextDouble(),scanner.nextDouble(),scanner.next(),name,scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.nextBoolean(),scanner.next());
-        monkeyList.add(Monkey1);
+        try{
+            Monkey Monkey1 = new Monkey(scanner.nextDouble(),scanner.nextDouble(),scanner.nextDouble(),scanner.next(),name,scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.nextBoolean(),scanner.next());
+            monkeyList.add(Monkey1);
+        }catch (Exception inputMismatchException){
+            System.out.println("Invalid input, Please try again");
+            return;
+        }
         return;
         }
 
