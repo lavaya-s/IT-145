@@ -87,7 +87,7 @@ public class Driver {
         System.out.println("What is the dog's name?");
         String name = scanner.nextLine();
         for(Dog dog: dogList) {
-            if(dog.getName().equalsIgnoreCase(name)) {
+            if(dog.getName().equalsIgnoreCase(name)&&name!=null) {
                 System.out.println("\n\nThis dog is already in our system\n\n");
                 return; //returns to menu
             }
@@ -114,7 +114,7 @@ public class Driver {
         System.out.println("What is the monkey's name?");
         String name = scanner.nextLine();
         for(Monkey monkey: monkeyList) {
-            if(monkey.getName().equalsIgnoreCase(name)) {
+            if(monkey.getName().equalsIgnoreCase(name) && name != null) {//check to make sure the name is not empty and not already taken. 
                 System.out.println("\n\nThis monkey is already in our system\n\n");
                 return; //returns to menu
             }
@@ -133,7 +133,7 @@ public class Driver {
         // You will need to find the animal by animal type and in service country
         public static void reserveAnimal(Scanner scanner) {
             System.out.println("The method reserveAnimal needs to be implemented");
-
+        
         }
         public static void printAnimals(String switchCase) {
             //System.out.println("The method printAnimals needs to be implemented");
