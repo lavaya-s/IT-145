@@ -76,7 +76,8 @@ public class Driver {
     // Adds monkeys to a list for testing
     //Optional for testing
     public static void initializeMonkeyList() {
-
+        Monkey monkey1Monkey = new Monkey(5, 5, 5, "monkey", "banana", "female", "five", "twenty", "1/1/2022", "america", "intermediate", false, "america");
+        monkeyList.add(monkey1Monkey);
     }
 
 
@@ -92,7 +93,7 @@ public class Driver {
                 return; //returns to menu
             }
         }
-
+//TODO:create variable for scnr input and use them in the class instantiation
         // Add the code to instantiate a new dog and add it to the appropriate list
         try{
             Dog dog1Dog = new Dog(name,scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.next(),scanner.nextBoolean(),scanner.next());
