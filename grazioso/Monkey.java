@@ -10,7 +10,6 @@ public class Monkey extends RescueAnimal{//inherets from the rescue animal class
     public Monkey(double tailLength, double height,double bodyLength, String species, String name, String gender, String age,
     String weight, String acquisitionDate, String acquisitionCountry,
 	String trainingStatus, boolean reserved, String inServiceCountry){
-        //TODO: add print statements in between methods
         setTailLength(tailLength);
         setHeight(height);
         setBodyLength(bodyLength);
@@ -51,10 +50,4 @@ public class Monkey extends RescueAnimal{//inherets from the rescue animal class
     public String getSpecies(String species){
         return species;
     }
-/*Implement all attributes to meet the specifications.
-Include a constructor. You may use a default constructor. 
-To score “exemplary” on this criterion, 
-you must include the more detailed constructor that takes all values for the attributes and sets them.
-Refer to the constructor in the Dog class for an example.
-Include accessors and mutators for all implemented attributes.*/
 }
