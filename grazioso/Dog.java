@@ -30,5 +30,5 @@ public class Dog extends RescueAnimal {
     public void setBreed(String dogBreed) {
         breed = dogBreed;
     }
-
+    
 }
