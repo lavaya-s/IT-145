@@ -29,12 +29,8 @@ public class Driver {
                 case "3":
                     reserveAnimal(scnr);
                     break;
-                 case "4":
-                    printAnimals(switchCase);
-                    break;
+                case "4"://allows fall through stwitchcases to the the print animals method
                 case "5":
-                    printAnimals(switchCase);
-                    break;
                 case "6":
                     printAnimals(switchCase);
                     break;
