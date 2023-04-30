@@ -21,7 +21,7 @@ public class Pet {
         ArrayList<Integer> dogSpaces = new ArrayList<Integer>(30);
         int daysStay = 0;
         double amountDue = 0;
-        public String getPetType() {
+        public final getPetType() {
             return this.petType;
         }public String getPetName() {
             return this.petName;
