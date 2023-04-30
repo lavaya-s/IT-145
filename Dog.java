@@ -4,22 +4,16 @@ public class Dog {
 	Scanner scnr = new Scanner(System.in);
 	Dog(){
 		String name = scnr.nextLine();
-		
 		setDogWeight();
 		setDogSpaceNumber();
 		setGrooming();
 	}
-	
 	public static void main(String[] args) {
-
-		
 		/*init variables for dog*/
 		int dogSpaceNumber = 0;//get space number
 		double dogWeight = 0;//get dog weight
 		boolean grooming = false;//set deafualt to false unless otherwise stated
-		
 	}
-	
 		public int getDogSpaceNumber() {
 			return Pet.dogSpaceNumber;
 		}
