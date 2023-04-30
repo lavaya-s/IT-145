@@ -6,13 +6,10 @@ public class DrawHalfArrow {
       int arrowBaseHeight;
       int arrowBaseWidth;
       int arrowHeadWidth;
-      
       System.out.println("Enter arrow base height:");
       arrowBaseHeight = scnr.nextInt();
-      
       System.out.println("Enter arrow base width:");
       arrowBaseWidth = scnr.nextInt();
-      
       System.out.println("Enter arrow head width:");
       arrowHeadWidth = scnr.nextInt();
       while (arrowHeadWidth <= arrowBaseWidth) {//loop until user enters a number greater than the base
@@ -21,7 +18,6 @@ public class DrawHalfArrow {
          arrowHeadWidth = scnr.nextInt();//take input from user
 }
       System.out.println("");
-      
       while (arrowBaseHeight>0){//decrement value until all iterations are done
          int arrowCount = arrowBaseWidth;//initialize count for inner loop
          arrowBaseHeight--;//decremement the loop variable
