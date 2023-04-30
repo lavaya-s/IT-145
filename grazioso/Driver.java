@@ -1,18 +1,15 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
 public class Driver {
     //arraylists to hold the animals data
     private static ArrayList<Dog> dogList = new ArrayList<Dog>();
     private static ArrayList<Monkey> monkeyList = new ArrayList<Monkey>();
-
     public static void main(String[] args) {
         //set a loop conditions for the program to run
         boolean loop = true;
         //initialize the lists
         initializeDogList();
         initializeMonkeyList();
-
         // a loop that displays the menu, accepts the users input
         // and takes the appropriate action.
         do{
@@ -40,7 +37,6 @@ public class Driver {
                 }
         }while (loop == true);
     }
-
     // This method prints the menu options
     public static void displayMenu() {
         System.out.println("\n\n");
@@ -55,26 +51,20 @@ public class Driver {
         System.out.println();
         System.out.println("Enter a menu selection");
     }
-
-
     // Adds dogs to a list for testing
     public static void initializeDogList() {
         Dog dog1 = new Dog("Spot", "German Shepherd", "male", "1", "25.6", "05-12-2019", "United States", "intake", false, "United States");
         Dog dog2 = new Dog("Rex", "Great Dane", "male", "3", "35.2", "02-03-2020", "United States", "Phase I", false, "United States");
         Dog dog3 = new Dog("Bella", "Chihuahua", "female", "4", "25.6", "12-12-2019", "Canada", "in service", true, "Canada");
-
         dogList.add(dog1);
         dogList.add(dog2);
         dogList.add(dog3);
     }
-
-
     // Adds monkeys to a list for testing
     public static void initializeMonkeyList() {
         Monkey monkey1Monkey = new Monkey(5, 5, 5, "monkey", "banana", "female", "five", "twenty", "1/1/2022", "america", "intermediate", false, "america");
         monkeyList.add(monkey1Monkey);
     }
-
     // input validation to check that the dog is not already in the list
     public static void intakeNewDog(Scanner scnr) {
         System.out.println(" Please enter all input without spaces!!!!");
@@ -113,7 +103,6 @@ public class Driver {
         }
         return;
     }
-
 	//Instantiate and add the new monkey to the appropriate list
     public static void intakeNewMonkey(Scanner scnr) {
         System.out.println("Please enter all entres without spaces!!!!!");
@@ -157,7 +146,6 @@ public class Driver {
         }
         return;
         }
-
         // Complete reserveAnimal
         // You will need to find the animal by animal type and in service country
         public static void reserveAnimal(Scanner scnr) {
