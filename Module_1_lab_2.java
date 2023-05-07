@@ -35,6 +35,7 @@ public class Module_1_lab_2 {
       System.out.print(userNum2);
       System.out.print(" is ");
       System.out.println(product);
+      scnr.close();
       return;
    }
 }
