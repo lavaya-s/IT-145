@@ -1,8 +1,8 @@
-import java.util.InputMismatchException;
+import java.util.InputMismatchException;/*shows error saying this is never used. 
+                                            It is in fact in the catch block*/
 import java.util.Scanner;
 /**/
 public class Paint1 {
-
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
         double wallHeight = 0.0;
@@ -20,7 +20,8 @@ public class Paint1 {
                 if (wallHeight>0){
                     loop++;
                 }
-            } catch (Exception inputMismatchException) {
+            } 
+            catch (Exception inputMismatchException) {
                 System.out.println("input not valid");
                 scnr.next();//take input but don't add it to anything
             }
@@ -47,7 +48,6 @@ public class Paint1 {
         // Calculate and output wall area
         wallArea = wallHeight * wallWidth;
         System.out.println("Wall area: " + wallArea + " square feet");
-
         // Calculate and output the amount of paint (in gallons) needed to paint the wall
         gallonsPaintNeeded = wallArea/squareFeetPerGallons;
         System.out.println("Paint needed: " + gallonsPaintNeeded + " gallons");
