@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-
 public class ShoppingCartPrinter {
    public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in);
@@ -31,11 +29,11 @@ public class ShoppingCartPrinter {
       item1.setPrice(productPrice);
       productQuantity=(scnr.hasNextInt())?scnr.nextInt():0;
       item1.setQuantity(productQuantity);
-      // Add costs of two items and print total
-     
-      // cartTotal = item one price + item two price
-      // item one information
-   
+   /*
+      Add costs of two items and print total
+      cartTotal = item one price + item two price
+      item one information
+   */
       double total = 0;
       total = item1.getPrice(productPrice) + item2.getPrice(productPrice);
       // Total output
@@ -44,14 +42,14 @@ public class ShoppingCartPrinter {
       System.out.print("Total: $");
       System.out.println(total);
       scnr.close();
-      
-      // Add costs of two items and print total
-      // cartTotal = item one price + item two price
-      // Totoal Cost
-      // item one information
-      // item two information
-      // Total output
-      
+      /*
+      Add costs of two items and print total
+      cartTotal = item one price + item two price
+      Total Cost
+      item one information
+      item two information
+      Total output
+      */
       return;
    }
 }
