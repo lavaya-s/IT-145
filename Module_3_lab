@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 
-public class DrawHalfArrow {
+public class Module_3_lab {
    public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in);
       int arrowBaseHeight;
