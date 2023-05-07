@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Module_3_lab {
+public class Module_3_lab_2 {
    public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in);
       String userText;
